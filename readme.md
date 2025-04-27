@@ -1,12 +1,14 @@
 📦 Automated Warehouse Scenario (Spring 2025)
+
 This project implements the Automated Warehouse Scenario using Answer Set Programming (ASP) with Clingo, based on the specifications provided in course description. It models robot movement, shelf pickup, product delivery, and order fulfillment in a warehouse environment.
 
 📄 Files Included
 
 File	Description
-warehouse_project.lp	Main ASP file (combined: parsing, counting, action generation, constraints, effects, and optimization)
-simpleInstances/inst1.asp to inst5.asp	Example warehouse instances to test your solution
+warehouse_project.lp	Main ASP file 
+simpleInstances/inst1.asp to inst5.asp	
 run.py	Python script to select and solve an instance interactively
+
 ⚙ Requirements
 Clingo (ASP solver)
 ➔ Install from: https://potassco.org/clingo/
@@ -17,6 +19,7 @@ Python 3.x (only if using the helper script run.py)
 ➔ Solve manually with Clingo:
 
 Example (solving instance 1):
+
 clingo warehouse_project.lp simpleInstances/inst1.asp -c n=50
 n=50 defines the planning horizon (maximum steps).
 
@@ -24,8 +27,6 @@ You can adjust n if needed.
 
 ➔ Solve automatically with Python script:
 Run the helper script:
-
-
 python run.py
 
 The script will:
